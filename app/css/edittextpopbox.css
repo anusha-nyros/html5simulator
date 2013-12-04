@@ -1,0 +1,200 @@
+/*body {
+    margin: 0px;
+    padding: 0px;
+}*/
+/*room creator menu icons*/
+img {
+        outline:0; 
+        border:0;
+}
+        
+#menu {
+    /* you must set it to relative, so that you can use absolute position for children elements */
+    position:relative; 
+    text-align:center; 
+    width:583px; 
+    height:40px;
+}
+
+#menu ul {
+    /* remove the list style and spaces*/
+    margin:0; 
+    padding:0; 
+    list-style:none; 
+    display:inline;
+
+    /* position absolute so that z-index can be defined */
+    position:absolute; 
+
+    /* center the menu, depend on the width of you menu*/
+    left:110px; 
+    top:0; 
+}
+
+#menu ul li {
+    /* give some spaces between the list items */
+    margin:0 5px; 
+
+    /* display the list item in single row */
+    float:left;
+}
+
+#menu #edittextbox {
+    /* position absolute so that z-index can be defined and able to move this item using javascript */
+    position:absolute; 
+    left:0; 
+    top:0; 
+    z-index:200; 
+
+    /* image of the right rounded corner */
+    background:url(../tail.gif) no-repeat right center; 
+    height:35px;
+
+
+    /* add padding 8px so that the tail would appear */
+    padding-right:8px;
+
+    /* set the box position manually */
+    margin-left:5px;
+}
+
+#menu #edittextbox .head {
+    /* image of the left rounded corner */
+    background:url(../head.gif) no-repeat 0 0;
+    height:35px;
+    color:#eee;
+
+    /* force text display in one line */
+    white-space:nowrap;
+
+    /* set the text position manually */
+    padding-left:8px;
+    padding-top:12px;
+}        
+
+/* Popup box */
+.edittextpopbox {
+  margin:0px auto;
+  margin-top: 100px;
+  text-align:center;
+  position:absolute;
+  z-index: 1;
+  display: none;
+}
+
+/* Popup box */
+.edittextpopbox1 {
+ /* margin:0px auto;
+  margin-top: 100px;*/
+  text-align:center;
+  position:absolute;
+  z-index: 1;
+  display: none;
+}
+
+/* Popup box */
+.edittextpopbox2 {
+ /* margin:0px auto;
+  margin-top: 100px;*/
+  text-align:center;
+  position:absolute;
+  z-index: 1;
+  display: none;
+}
+
+/* Popup box */
+.edittextpopbox3 {
+ /* margin:0px auto;
+  margin-top: 100px;*/
+  text-align:center;
+  position:absolute;
+  z-index: 1;
+  display: none;
+}
+
+.collapse { position:relative; }
+
+.open {
+    background:#DDD;
+    border:solid 1px #FFF;
+    border-radius:5px;
+    box-shadow: 0px 0px 5px #CCC;
+    background:-webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+    background:-moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+    background:linear-gradient(top,#f4f4f4,#e8e8e8);
+    padding:8px;
+}
+
+.edittextbox {
+    background:#FFF;
+    border:solid 1px #BBBBBB;
+    border-radius:5px;
+    box-shadow:0px 0px 15px #999;
+    /*position:absolute;*/
+    padding: 20px;
+}
+
+.edittextbox1 {
+    background:#FFF;
+    border:solid 1px #BBBBBB;
+    border-radius:5px;
+    box-shadow:0px 0px 15px #999;
+    position:absolute;
+    padding: 20px;
+}
+
+.edittextbox2 {
+    background:#FFF;
+    border:solid 1px #BBBBBB;
+    border-radius:1px;
+    box-shadow:0px 0px 15px #999;
+    position:absolute;
+    padding: 20px;
+}
+
+.edittextbox3 {
+    background:#FFF;
+    border:solid 1px #BBBBBB;
+    border-radius:1px;
+    box-shadow:0px 0px 15px #999;
+    position:absolute;
+    padding: 20px;
+}
+
+
+.edittextbox a.close {
+    color:red;
+    font-size:12px;
+    font-family:arial;
+    text-decoration:underline;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #FFF;
+    position:absolute;
+    left:1px;
+    top:-10px;
+    z-index:1001;
+}
+
+.arrow-border {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #BBBBBB;
+    position:absolute;
+    top:-12px;
+    z-index:1000;
+}
+
+/*Room area*/
+canvas {
+    /**border: 1px solid #9C9898;**/
+    margin-left: 0px;
+    margin-top: 0px;
+}

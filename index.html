@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Appnetic Simulator</title>
+    <style type="text/css">
+        .dallas-star-main {
+            width: 393px;
+            height: 871px;
+            background: url(img/iphonebg.png) no-repeat;
+            margin: 0 auto;
+        }
+        .dallas-title {
+            width: 320px;
+            height: 59px;
+            margin-top: 110px;
+            margin-left: 21px;
+            display: inline-block
+        }
+        .dallas-title input[type="text"] {
+            background: none;
+            width: 270px;
+            margin-top: 28px;
+            margin-left: 10px;
+            text-indent: 8px;
+            border: 0
+        }
+        .iframe-blk {
+            width: 320px;
+            height: 511px;
+            margin-left: 23px;
+            border: 0;
+            margin-top: -10px;
+        }
+		div {
+			-webkit-user-select: ignore;
+		}
+		body {
+			-moz-user-focus: ignore;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+    </style>
+</head>
+
+<body>
+    <h1 style="margin: 0 auto;text-align:center;margin-left:-88px;margin-bottom:10px;">Appnetic Simulator</h1>
+    <div style="float:left;margin-top:30px;">
+		<iframe src="dropzone/index.html" class="iframe-blk" scrolling="yes"></iframe>
+    </div>
+    <div style="margin-left: 150px;float:left">
+		<div class="dallas-star-main">
+			<div class="dallas-title">
+				<input type="text" value="http://50.19.187.178/simulator.html" />
+			</div>
+			<iframe src="app/canvas.html" class="iframe-blk" scrolling="no"></iframe>
+		</div>
+    </div>
+</body>
+
+</html>
